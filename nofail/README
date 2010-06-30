@@ -1,0 +1,9 @@
+1) Build the module (on a standard RHEL5 host):
+
+make -C /lib/modules/`uname -r`/build/ M=$PWD modules
+
+2) Load it:
+
+insmod nofail.ko
+
+3) Look at the dmesg output
